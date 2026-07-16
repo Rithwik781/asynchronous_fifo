@@ -114,7 +114,6 @@ This project was built and simulated in **Xilinx Vivado** (Behavioral Simulation
 5. Run Behavioral Simulation
 6. Observe `data_out`, `full`, `empty`, and `errors` in the waveform viewer
 
-> Note: this design uses only standard Verilog-2001 constructs and has no Vivado-specific dependencies, so it should also simulate correctly in Icarus Verilog / ModelSim with minor testbench adjustments (e.g. waveform dump commands).
 
 ## Key Design Decisions
 
