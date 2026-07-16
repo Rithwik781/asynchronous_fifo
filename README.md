@@ -63,9 +63,9 @@ async-fifo-verilog/
 │
 └── docs/
     ├── Screenshot 2026-07-16 131057.png   # waveform (write→full→read→empty, errors=0)
-    ├── Screenshot 2026-07-16 131457.png   # supporting waveform detail
+    ├── Screenshot 2026-07-16 131457.png   # Schematic
     ├── Screenshot 2026-07-16 132923.png   # supporting waveform detail
-    └── asynchronous-fifo-768x434.gif      # animated waveform version
+    └── asynchronous-fifo-768x434.gif      # Block diagram
 ```
 
 ## Module Descriptions
@@ -122,13 +122,5 @@ This project was built and simulated in **Xilinx Vivado** (Behavioral Simulation
 - **Gray-code pointers over binary**: chosen specifically because only a single bit toggles per increment, which is what makes it safe to synchronize across clock domains without risk of the synchronizer capturing a pointer value that's off by more than one count.
 - **2-flop synchronizers**: the standard minimum depth for resolving metastability with acceptably low failure probability at typical clock speeds; a 3-flop synchronizer could be substituted for higher-reliability applications at the cost of one extra cycle of latency.
 
-## Possible Extensions
-
-- Registered/FWFT (first-word-fall-through) style output with lookahead empty flag
-- Almost-full / almost-empty programmable threshold flags
-- Parameterizable synchronizer depth for higher-reliability CDC
-- Formal verification of the CDC paths (e.g. using SystemVerilog assertions or a formal tool)
-
 ---
 
-*Part of an ongoing RTL design portfolio — see also: [AXI4 Protocol Implementation](#) (slave, master, AXI4-Lite register block, 2x2 crossbar, UVM testbench).*
