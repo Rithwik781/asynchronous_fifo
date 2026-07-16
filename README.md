@@ -122,4 +122,6 @@ This project was built and simulated in **Xilinx Vivado** (Behavioral Simulation
 - **2-flop synchronizers**: the standard minimum depth for resolving metastability with acceptably low failure probability at typical clock speeds; a 3-flop synchronizer could be substituted for higher-reliability applications at the cost of one extra cycle of latency.
 
 ---
-
+## Author
+Rithwik kusuma Final Year B.Tech — Electrical and Electronics Engineering
+NIT Warangal
